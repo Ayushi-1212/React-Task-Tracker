@@ -1,0 +1,101 @@
+/* App.css */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #5c258d, #4389a2);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App {
+  max-width: 600px;
+  width: 100%;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  color: #5c258d;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: linear-gradient(to right, #f06, #9f6);
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin: 0.5rem 0;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+li:hover {
+  background: linear-gradient(to right, #f06, #9f6);
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+input {
+  flex: 1;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  padding: 1rem;
+  border: 1px solid #05a753;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+button:hover {
+  background: #5c258d;
+  border-color: #571691;
+}
+
+
+.filter-label {
+  display: block;
+  margin-bottom: 1rem;
+  color: #000; /* Change filter label color to black */
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+  .App {
+    padding: 1.5rem;
+  }
+
+  input,
+  button {
+    padding: 0.75rem;
+  }
+  
+  li {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+}
